@@ -57,7 +57,7 @@ const extension: JupyterLabPlugin<void> = {
     }
 
     app.commands.addCommand(CommandIDs.saveWithoutOutputs, {
-        label: 'Save Notebook Without Ouputs',
+        label: 'Save Notebook without Ouputs',
         execute: async (args) => {
           const current = getCurrent(args);
 
@@ -82,7 +82,7 @@ const extension: JupyterLabPlugin<void> = {
     palette.addItem({command:CommandIDs.saveWithoutOutputs, category:'Notebook Operations'})
 
     app.commands.addCommand(CommandIDs.saveWithWidgets, {
-        label: 'Save Notebook with widget state',
+        label: 'Save Notebook with Jupyter-Widgets state',
         execute: async (args) => {
           const current = getCurrent(args);
 
