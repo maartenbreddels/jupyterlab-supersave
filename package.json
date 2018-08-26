@@ -1,0 +1,49 @@
+{
+  "name": "jupyterlab-supersave",
+  "version": "0.1.0",
+  "description": "Pro save options",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/maartenbreddels/jupyterlab-supersave",
+  "bugs": {
+    "url": "https://github.com/maartenbreddels/jupyterlab-supersave/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Maarten Breddels, Olivier Borderies",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maartenbreddels/jupyterlab-supersave.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "watch": "tsc -w",
+    "prepare": "npm run clean && npm run build"
+  },
+  "peerDependencies": {
+    "@jupyterlab/application": "^0.18.0",
+    "@jupyterlab/notebook": "^0.18.0",
+    "@jupyterlab/apputils": "^0.18.0",
+    "@jupyter-widgets/jupyterlab-manager": "^0.37.0"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.1",
+    "typescript": "~2.9.2",
+    "@jupyterlab/application": "^0.18.0",
+    "@jupyterlab/notebook": "^0.18.0",
+    "@jupyterlab/apputils": "^0.18.0",
+    "@jupyter-widgets/jupyterlab-manager": "^0.37.0"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
