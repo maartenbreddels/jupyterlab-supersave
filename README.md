@@ -1,6 +1,8 @@
 # jupyterlab-supersave
 
-Pro save options
+More Notebook save options.
+
+After installation you should have an extra command in the command palette of Jupyter Lab. When used with a open notebook, it will save it without the output cells.
 
 
 ## Prerequisites
